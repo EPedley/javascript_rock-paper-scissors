@@ -22,6 +22,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px 0px;
-    background-color: #222831;
-    color:#ced5e0
+    background-color:#111720;
+    color:#ced5e0;
+    font-family: 'Oxanium';
+    font-size: small;
 }
