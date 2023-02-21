@@ -1,0 +1,16 @@
+
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111720;
+    color: #fac650; 
+    font-family: 'Wallpoet';
+    padding: 40px 0px;
+}
