@@ -7,10 +7,11 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #111720;
-    color: #fac650; 
-    font-family: 'Wallpoet';
-    padding: 40px 0px;
+    color: white; 
+    font-family: 'Bungee Shade';
+    padding: 20px 0px;
+    font-size: 50px;
 }
