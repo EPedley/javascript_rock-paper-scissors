@@ -45,7 +45,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-let playerSelection = "ROCK";
+let playerSelection = "SCISSORS";
 let computerSelection = "ROCK";
 
 function showComputerChoice(computerSelection) {
@@ -63,6 +63,23 @@ function showComputerChoice(computerSelection) {
     }  
 }
 
+function showPlayerChoice(playerSelection) {
+    if (playerSelection === "SCISSORS") {
+        const element = document.getElementById("player_weapon");
+        element.innerHTML = "✂️";
+    }
+    else if (playerSelection === "PAPER") {
+        const element = document.getElementById("player_weapon");
+        element.innerHTML = "📄";        
+    }
+    else {
+        const element = document.getElementById("player_weapon");
+        element.innerHTML = "🪨";           
+    }  
+}
+
 showComputerChoice(computerSelection);
+
+showPlayerChoice(playerSelection);
 
 playRound(playerSelection, computerSelection);
