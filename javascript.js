@@ -76,18 +76,29 @@ function showPlayerChoice(playerSelection) {
     }  
 }
 
-//function that selects the player's weapon depending on which button they click
 function getPlayerChoice() {
     return "SCISSORS";
 }
 
-//function to decide the computer's choice
+//function to get a random selection from the computer
 function getComputerChoice() {
-    return "SCISSORS";
+    let random = Math.floor(Math.random() * 3);
+    console.log(random);
+    if (random === 0) {
+        choice = "ROCK";
+        return choice;
+    }
+    else if (random === 1) {
+        choice = "PAPER";
+        return choice;
+    }
+    else {
+        choice = "SCISSORS"
+        return choice;
+    }
 }
 
 let playerSelection = getPlayerChoice();
-
 let computerSelection = getComputerChoice();
 
 showComputerChoice(computerSelection);
