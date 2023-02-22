@@ -44,7 +44,25 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-let playerSelection = "SCISSORS";
-let computerSelection = "PAPER";
+
+let playerSelection = "ROCK";
+let computerSelection = "ROCK";
+
+function showComputerChoice(computerSelection) {
+    if (computerSelection === "SCISSORS") {
+        const element = document.getElementById("computer_weapon");
+        element.innerHTML = "✂️";
+    }
+    else if (computerSelection === "PAPER") {
+        const element = document.getElementById("computer_weapon");
+        element.innerHTML = "📄";        
+    }
+    else {
+        const element = document.getElementById("computer_weapon");
+        element.innerHTML = "🪨";           
+    }  
+}
+
+showComputerChoice(computerSelection);
 
 playRound(playerSelection, computerSelection);
