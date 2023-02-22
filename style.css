@@ -17,6 +17,14 @@ body {
     font-family: 'Bungee Shade';
     padding: 20px 0px;
     font-size: 50px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    text-align: center;
 }
 
 .score > .counter {
