@@ -98,11 +98,46 @@ function getComputerChoice() {
     }
 }
 
-let playerSelection = getPlayerChoice();
-let computerSelection = getComputerChoice();
+//function to select ROCK for the user and call the getComputerChoice, showPlayerChoice and showComputerChoice functions
+function rock_click() {
+    let computerSelection = getComputerChoice();
+    playerSelection = "ROCK";
+    showPlayerChoice(playerSelection);
+    showComputerChoice(computerSelection);
+}
 
-showComputerChoice(computerSelection);
+//function to select PAPER for the user and call the getComputerChoice, showPlayerChoice and showComputerChoice functions
+function paper_click() {
+    let computerSelection = getComputerChoice();
+    playerSelection = "PAPER";
+    showPlayerChoice(playerSelection);
+    showComputerChoice(computerSelection);
+}
 
-showPlayerChoice(playerSelection);
+//function to select SCISSORS for the user and call the getComputerChoice, showPlayerChoice and showComputerChoice functions
+function scissors_click() {
+    let computerSelection = getComputerChoice();
+    playerSelection = "SCISSORS";
+    showPlayerChoice(playerSelection);
+    showComputerChoice(computerSelection);
+}
+
+//declare my playerSelection and computerSelection variables but don't populate them
+let playerSelection;
+let computerSelection;
+
+//listen to the ROCK button
+const rock = document.getElementById("rock");
+rock.addEventListener("click", rock_click);
+
+//listen to the PAPER button
+const paper = document.getElementById("paper");
+paper.addEventListener("click", paper_click);
+
+//listen to the SCISSORS button
+const scissors = document.getElementById("scissors");
+scissors.addEventListener("click", scissors_click);
+
+
 
 playRound(playerSelection, computerSelection);
