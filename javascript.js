@@ -1,4 +1,4 @@
-
+//function to decide who the winner is
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "SCISSORS") {
         if (computerSelection === "PAPER") {
@@ -44,10 +44,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-
-let playerSelection = "SCISSORS";
-let computerSelection = "ROCK";
-
+//function to change the image in the results element depending on the computer's choice
 function showComputerChoice(computerSelection) {
     if (computerSelection === "SCISSORS") {
         const element = document.getElementById("computer_weapon");
@@ -63,6 +60,7 @@ function showComputerChoice(computerSelection) {
     }  
 }
 
+//function to show the image in the results element depending on the player's choice
 function showPlayerChoice(playerSelection) {
     if (playerSelection === "SCISSORS") {
         const element = document.getElementById("player_weapon");
@@ -77,6 +75,20 @@ function showPlayerChoice(playerSelection) {
         element.innerHTML = "🪨";           
     }  
 }
+
+//function that selects the player's weapon depending on which button they click
+function getPlayerChoice() {
+    return "SCISSORS";
+}
+
+//function to decide the computer's choice
+function getComputerChoice() {
+    return "SCISSORS";
+}
+
+let playerSelection = getPlayerChoice();
+
+let computerSelection = getComputerChoice();
 
 showComputerChoice(computerSelection);
 
