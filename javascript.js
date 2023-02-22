@@ -2,40 +2,49 @@
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === "SCISSORS") {
         if (computerSelection === "PAPER") {
-            console.log("YOU WIN");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "YOU WIN";
         }
         else if (computerSelection === "ROCK") {
-            console.log("YOU LOSE");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "YOU LOSE";
         }
         else {
-            console.log("IT'S A TIE");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "IT'S A TIE";
         }
     }
     else if (playerSelection === "PAPER") {
         if (computerSelection === "ROCK") {
-            console.log("YOU WIN");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "YOU WIN";
         }
         else if (computerSelection === "SCISSORS") {
-            console.log("YOU LOSE");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "YOU LOSE";
         }
         else {
-            console.log("IT'S A TIE");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "IT'S A TIE";
         }
     }
     else {
         if (computerSelection === "SCISSORS") {
-            console.log("YOU WIN");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "YOU WIN";
         }
         else if (computerSelection === "PAPER") {
-            console.log("YOU LOSE");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "YOU LOSE";
         }
         else {
-            console.log("IT'S A TIE");
+            const element = document.getElementById("score_text");
+            element.innerHTML = "IT'S A TIE";
         }
     }
 }
 
-let playerSelection = "ROCK";
-let computerSelection = "SCISSORS";
+let playerSelection = "SCISSORS";
+let computerSelection = "PAPER";
 
 playRound(playerSelection, computerSelection);
