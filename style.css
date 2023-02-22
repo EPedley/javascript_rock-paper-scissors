@@ -3,9 +3,9 @@
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
-    background-color: #222831;
+    background-color: #FFFAFF;
     font-family: 'Oxanium';
-    color: white;
+    color: #4F25E1;
 }
 
 img {
@@ -17,7 +17,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #111720;
+    background-color: #4F25E1    ;
     color: white; 
     font-family: 'Bungee Shade';
     padding: 20px 0px;
@@ -35,7 +35,7 @@ img {
 button {
     width: 180px;
     height: 180px;
-    background-color: #393E46;
+    background-color: #43E8FF;
     border-radius: 10px;
     border: 0;
     margin: 0px 40px;
@@ -47,8 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: aliceblue;
-    color: #222831;
+    background-color: #F734CB;
 }
 
 .result {
@@ -63,12 +62,14 @@ button:hover {
     display: flex;
     justify-content: center;
     font-size: 100px;
+    color: #F734CB;
 }
 
 .score > .text {
     display: flex;
     justify-content: center;
     font-size: 30px;
+    color: #F734CB;
 }
 
 .score > .counter > .player, .score > .counter .computer {
@@ -80,7 +81,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 5px 0px;
-    background-color:#111720;
+    background-color:#4F25E1;
     color:#ced5e0;
     font-size: small;
 }
