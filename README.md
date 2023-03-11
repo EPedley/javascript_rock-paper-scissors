@@ -1,4 +1,4 @@
-# javascript_calculator
+# rock_paper_scissors
 
 As part of my progress through The Odin Project I have created a rock, paper, scissors game using HTML, CSS and Javascript.
 
